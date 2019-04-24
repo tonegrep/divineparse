@@ -3,6 +3,16 @@ import glob
 import os
 from enum import Enum
 
+
+# def findClassElements(file, class_str):
+#     with 
+#     for str in file:
+#         if str == class_str:
+            
+
+#     return
+
+
 class StructureType(Enum):
     CLASS = 0
     METHOD = 1
@@ -73,8 +83,7 @@ class ParseC(Parser):
                             print(splitstr)
                             name = splitstr[splitstr.index("class") + 1]
                             if (checkObjectName(obj_container, name)):
-                                struct = Structure(StructureType.CLASS, name)
-                                self.objects.append(struct)
+                                self.objects.append(Structure(StructureType.CLASS, name))
                 if "*/" in str:
                     is_comment = False
 
