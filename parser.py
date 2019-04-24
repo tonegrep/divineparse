@@ -9,7 +9,7 @@ class StructureType(Enum):
     VARIABLE = 2
 
 class Structure:
-    def __init__(self, type, name= "Some class"):
+    def __init__(self, type, name= "helpme"):
         self._name = name
         self._type = type
         self._children = []
